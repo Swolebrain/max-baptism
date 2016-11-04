@@ -15,12 +15,12 @@ $("#btn2").click(function(){
     },
     method: "POST",
     data:{
-      dest_email: "thecodingteacher@gmail.com",
+      dest_email: "marizelle.rodriguez@gmail.com",
       subject: "Reservation for Max's baptism",
       message: "Reservation by: "+$("#name").val()+ "\nNum guests: " +$("#numguests").val(),
       email: "blah@blah.com",
       full_name: $("#name").val(),
-      ddate: "November 27,2016",
+      ddate: "November 27, 2016",
       hora: "3:00pm"
     }
   })
