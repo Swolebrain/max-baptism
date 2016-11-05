@@ -5,12 +5,12 @@ $("#btn1").click(function(){
   $("#overlay").fadeIn();
 })
 $("#btn2").click(function(){
-  $("#btn2").hide();
   var name = $("#name").val();
   var guests = $("#numguests").val();
   if (!name || !guests){
     return alert("Please fill out all fields.");
   }
+  $("#btn2").hide();
   $("#status").html("Sending..")
   $.ajax({
     url: "http://fvi-grad.com:4004/email",
